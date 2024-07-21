@@ -1,8 +1,5 @@
 {
-	"label": "Block and Transaction Details",
+	"label": "🧱 Block and Tx Details",
 	"position": 5,
-	"link": {
-		"type": "generated-index",
-		"description": " "
-	}
+	"link": null
 }

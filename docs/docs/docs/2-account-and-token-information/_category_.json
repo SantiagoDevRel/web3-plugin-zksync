@@ -1,8 +1,5 @@
 {
-	"label": "Account and Token Information",
+	"label": "💼 Account and Token Info",
 	"position": 4,
-	"link": {
-		"type": "generated-index",
-		"description": " "
-	}
+	"link": null
 }

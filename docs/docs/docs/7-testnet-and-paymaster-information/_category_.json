@@ -1,8 +1,5 @@
 {
-	"label": "Testnet and Paymaster Information",
+	"label": "🧪 Testnet Paymaster",
 	"position": 9,
-	"link": {
-		"type": "generated-index",
-		"description": " "
-	}
+	"link": null
 }

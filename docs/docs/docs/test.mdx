@@ -1,0 +1,66 @@
+---
+sidebar_position: 10
+sidebar_label: 'Testing'
+---
+
+import TestingComponent from '@site/src/components/InitializeComponent/index';
+
+# Test live code editor
+
+Importing Testing Component outside of `jsx live`:
+
+<TestingComponent />
+
+Importing Testing Component inside of `jsx live`:
+
+```tsx live
+function Test() {
+	return (
+		<>
+			<TestingComponent />
+		</>
+	);
+}
+```
+
+```jsx live
+function Clock(props) {
+	const [date, setDate] = useState(new Date());
+	useEffect(() => {
+		var timerID = setInterval(() => tick(), 1000);
+
+		return function cleanup() {
+			clearInterval(timerID);
+		};
+	});
+
+	function tick() {
+		setDate(new Date());
+	}
+
+	return (
+		<div>
+			<h2>It is {date.toLocaleTimeString()}.</h2>
+		</div>
+	);
+}
+```
+
+<div>
+<details>
+<summary>Click here to show the `ERC20 Interface`</summary>
+
+```js
+function name() public view returns (string)
+function symbol() public view returns (string)
+function decimals() public view returns (uint8)
+function totalSupply() public view returns (uint256)
+function balanceOf(address _owner) public view returns (uint256 balance)
+function transfer(address _to, uint256 _value) public returns (bool success)
+function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
+function approve(address _spender, uint256 _value) public returns (bool success)
+function allowance(address _owner, address _spender) public view returns (uint256 remaining)
+```
+
+</details>
+</div>

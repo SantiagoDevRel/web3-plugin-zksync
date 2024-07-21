@@ -1,8 +1,5 @@
 {
-	"label": "Batch and Chain Information",
+	"label": "⛓️ Batch and Chain Info",
 	"position": 7,
-	"link": {
-		"type": "generated-index",
-		"description": " "
-	}
+	"link": null
 }
