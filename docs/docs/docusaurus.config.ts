@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
 	title: 'Web3 zkSync Plugin',
 	tagline: 'Plugin to interact with the zkSync network using the web3.js library',
-	favicon: 'img/puzzle.png',
+	favicon: 'img/zkSync-team-logo.png',
 
 	// Set the production url of your site here
 	url: 'https://your-docusaurus-site.example.com',
@@ -28,7 +28,11 @@ const config: Config = {
 		defaultLocale: 'en',
 		locales: ['en'],
 	},
-
+	plugins: [
+		// ...
+		require.resolve('docusaurus-lunr-search'),
+		'@docusaurus/theme-live-codeblock',
+	],
 	presets: [
 		[
 			'classic',
@@ -104,6 +108,13 @@ const config: Config = {
 		prism: {
 			theme: prismThemes.github,
 			darkTheme: prismThemes.dracula,
+		},
+		liveCodeBlock: {
+			/**
+			 * The position of the live playground, above or under the editor
+			 * Possible values: "top" | "bottom"
+			 */
+			playgroundPosition: 'bottom',
 		},
 	} satisfies Preset.ThemeConfig,
 };
